@@ -106,46 +106,6 @@ source $ZSH/oh-my-zsh.sh
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
 bindkey "ç" fzf-cd-widget
-# terminal aliases------------------------------
-alias la='ls -la | lolcat'
-alias t='tree -L 1 -a | lolcat'
-alias c='clear'
-alias mv='mv -i'
-alias cp='cp -i'
-alias ln='ln -i'
-alias cat='bat'
-alias list= 'brew list | fzf'
-# List only file beginning with "."
-alias lsa='ls -ld .* | fzf '
-alias pwdcp= 'pwd | pbcopy'
-alias e='exit'
-alias neofetch='neofetch | lolcat'
-alias gotoprojects=”cd ~/Workspace/Projects”
-function google() { open /Applications/Google\ Chrome.app/ "http://www.google.com/search?q= $1"; }
-alias formatcpp='clang-format -i *.cpp'
-alias formath= 'clang-format -i *.h'
-
-# zsh aliases------------------------------
-alias config="vi $HOME/.zshrc"
-alias reload="source $HOME/.zshrc"
-
-# hide and show files
-alias finder_s='defaults write com.apple.Finder AppleShowAllFiles TRUE; killAll Finder'
-alias finder_h='defaults write com.apple.Finder AppleShowAllFiles FALSE; killAll Finder'
-
-# create backup files
-backup() { cp "$1"{,.bak};}
-
-# manage bluetooth
-alias bton=”blueutil --power 1”
-alias btoff=”blueutil --power 0”
-
-# function for cpp
-co() { g++ -std=c++17 -O2 -o "${1%.*}" $1 -Wall; }
-run() { co $1 && ./${1%.*} & fg; }
-
-# CP TEMPLATE
-alias cpt="touch main.cpp input.txt output.txt"
 
 source /opt/homebrew/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 export PATH="/usr/local/opt/node@16/bin:$PATH"
@@ -153,10 +113,13 @@ export PATH="/opt/homebrew/opt/node@16/bin:$PATH"
 source /Users/camrynpoole/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 export PATH="$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH"
 
+for DOTFILE in `find /Users/camrynpoole/.dotfiles/system`
+do
+  [ -f $DOTFILE ] && source $DOTFILE
+done
+
 # open neofetch everytime terminal is started
 neofetch
-
-export FZF_DEFAULT_OPTS='--color=bg+:#302D41,bg:#1E1E2E,spinner:#F8BD96,hl:#F28FAD --color=fg:#D9E0EE,header:#F28FAD,info:#DDB6F2,pointer:#F8BD96 --color=marker:#F8BD96,fg+:#F2CDCD,prompt:#DDB6F2,hl+:#F28FAD'
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 eval "$(starship init zsh)"
