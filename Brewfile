@@ -1,3 +1,4 @@
+tap "buo/cask-upgrade"
 tap "cmacrae/formulae"
 tap "domq/gdb"
 tap "homebrew/bundle"
@@ -5,20 +6,14 @@ tap "homebrew/cask"
 tap "homebrew/cask-fonts"
 tap "homebrew/core"
 tap "homebrew/services"
-tap "jesseduffield/lazygit"
 tap "koekeishiya/formulae"
-tap "oclint/formulae"
-tap "universal-ctags/universal-ctags"
-
 
 brew "bat"
 brew "black"
 brew "blueutil"
 brew "ccls"
 brew "clang-format"
-brew "cmake-docs"
 brew "cppman"
-brew "ctags", link: false
 brew "curl"
 brew "fd"
 brew "figlet"
@@ -41,7 +36,6 @@ brew "neofetch"
 brew "tree-sitter"
 brew "neovim"
 brew "node"
-brew "node@16"
 brew "nvm"
 brew "pandoc"
 brew "perl"
@@ -50,27 +44,25 @@ brew "python@3.9"
 brew "ripgrep"
 brew "rust"
 brew "rustup-init"
-brew "spaceship"
 brew "starship"
-brew "stow"
 brew "stylua"
 brew "the_silver_searcher"
 brew "tldr"
 brew "tree"
-brew "w3m"
 brew "wget"
 brew "xclip"
 brew "zsh"
 brew "zsh-syntax-highlighting"
 brew "koekeishiya/formulae/skhd"
 brew "koekeishiya/formulae/yabai"
-brew "universal-ctags/universal-ctags/universal-ctags", args: ["HEAD"]
-
-
-cask "caffeine"
-cask "docker"
 cask "font-hack-nerd-font"
 cask "julia"
-cask "kap"
 cask "mactex"
 cask "zoom"
+
+mas "GoodNotes", id: 1444383602
+mas "iMovie", id: 408981434
+mas "Keynote", id: 409183694
+mas "Numbers", id: 409203825
+mas "Pages", id: 409201541
+mas "Xcode", id: 497799835
