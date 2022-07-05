@@ -105,8 +105,6 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
-bindkey "ç" fzf-cd-widget
-
 source /opt/homebrew/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 export PATH="/usr/local/opt/node@16/bin:$PATH"
 export PATH="/opt/homebrew/opt/node@16/bin:$PATH"
@@ -121,5 +119,4 @@ done
 # open neofetch everytime terminal is started
 neofetch
 
-[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 eval "$(starship init zsh)"

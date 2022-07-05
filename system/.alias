@@ -8,7 +8,6 @@ alias cp='cp -i'
 alias ln='ln -i'
 alias cat='bat'
 alias list= 'brew list | fzf'
-alias pwdcp= 'pwd | pbcopy'
 alias e='exit'
 alias neofetch='neofetch | lolcat'
 alias gotoprojects=”cd ~/Workspace/Projects”
@@ -20,12 +19,8 @@ alias config="nvim $HOME/.zshrc"
 alias reload="source $HOME/.zshrc"
 
 # hide and show files
-alias finder_s='defaults write com.apple.Finder AppleShowAllFiles TRUE; killAll Finder'
-alias finder_h='defaults write com.apple.Finder AppleShowAllFiles FALSE; killAll Finder'
-
-# manage bluetooth
-alias bton=”blueutil --power 1”
-alias btoff=”blueutil --power 0”
+alias finders='defaults write com.apple.Finder AppleShowAllFiles TRUE; killAll Finder'
+alias finderh='defaults write com.apple.Finder AppleShowAllFiles FALSE; killAll Finder'
 
 # CP TEMPLATE
 alias cpptemp="touch makefile main.cpp input.txt output.txt"
