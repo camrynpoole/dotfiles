@@ -24,3 +24,12 @@ alias finderh='defaults write com.apple.Finder AppleShowAllFiles FALSE; killAll 
 
 # CP TEMPLATE
 alias cpptemp="touch makefile main.cpp input.txt output.txt"
+
+# Folders
+alias work="$HOME/Workspace"
+alias doc="$HOME/Documents"
+alias dow="$HOME/Downloads"
+alias dot="$HOME/.dotfiles"
+
+# kitty
+alias icat="kitty +kitten icat --align=left"
