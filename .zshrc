@@ -35,6 +35,8 @@ done
 # Open neofetch everytime terminal is started
 neofetch
 
+# You can use whatever you want as an alias, like for Mondays:
+eval $(thefuck --alias fuck)
 # Pretty lights
 eval "$(starship init zsh)"
 

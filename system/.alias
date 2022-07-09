@@ -1,10 +1,6 @@
 
 # terminal aliases------------------------------
-alias ls='ls -a'
 alias c='clear'
-alias mv='mv -i'
-alias cp='cp -i'
-alias ln='ln -i'
 alias cat='bat'
 alias list= 'brew list | fzf'
 alias e='exit'
@@ -12,6 +8,11 @@ alias neofetch='neofetch | lolcat'
 alias gotoprojects=”cd ~/Workspace/Projects”
 alias formatcpp='clang-format -i *.cpp'
 alias formath= 'clang-format -i *.h'
+alias tree= 'exa --tree'
+alias ll='exa -a'
+alias la='exa -lah'
+alias ls='exa --color=auto'
+alias rm= 'trash'
 
 # zsh aliases------------------------------
 alias config="nvim $HOME/.zshrc"
