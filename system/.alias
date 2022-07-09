@@ -1,7 +1,6 @@
 
 # terminal aliases------------------------------
 alias ls='ls -a'
-alias t='tree -L 1 -a | lolcat'
 alias c='clear'
 alias mv='mv -i'
 alias cp='cp -i'
