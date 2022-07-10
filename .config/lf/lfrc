@@ -26,27 +26,6 @@ cmd mkfile ${{
   $EDITOR $ans
 }}
 
-cmd chmod ${{
-  printf "Mode Bits: "
-  read ans
-
-  for file in "$fx"
-  do
-    chmod $ans $file
-  done
-
-  lf -remote 'send reload'
-}}
-
-cmd sudomkfile ${{
-  printf "File Name: "
-  read ans
-  sudo $EDITOR $ans
-}}
-
-
-
-
 # Bindings
 # Remove some defaults
 map m
@@ -71,9 +50,7 @@ map x cut
 map y copy
 map <enter> open
 map mf mkfile
-map mr sudomkfile
 map md mkdir
-map ch chmod
 map r rename
 map H top
 map L bottom
@@ -87,8 +64,5 @@ map gD cd ~/Downloads
 map ge cd ~/Desktop
 
 map gc cd ~/.config
-map gl cd ~/.local
-map gU. cd /usr
-map gUs cd /usr/share
 
 map gh cd ~
