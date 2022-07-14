@@ -62,7 +62,7 @@ map gd cd ~/Documents
 
 map gD cd ~/Downloads
 map ge cd ~/Desktop
-
+map gw cd ~/Workspace/projects
 map gc cd ~/.config
 
 map gh cd ~
