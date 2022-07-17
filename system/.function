@@ -7,5 +7,3 @@ function mk() {
 co() { g++ -std=c++17 -O2 -o "${1%.*}" $1 -Wall; }
 run() { co $1 && ./${1%.*} & fg; }
 
-# google from terminal
-function google() { open /Applications/Google\ Chrome.app/ "http://www.google.com/search?q= $1"; }

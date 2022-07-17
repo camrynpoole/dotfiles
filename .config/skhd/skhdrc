@@ -23,17 +23,6 @@ lctrl + alt - l : yabai -m window --resize right:50:0; \
 # Equalise size of windows
 lctrl + alt - 0 : yabai -m space --balance
 
-# Enable / Disable gaps in current workspace
-lctrl + alt - g : yabai -m space --toggle padding; yabai -m space --toggle gap
-
-# Rotate windows clockwise and anticlockwise
-alt - r         : yabai -m space --rotate 270
-shift + alt - r : yabai -m space --rotate 90
-
-# Rotate on X and Y Axis
-shift + alt - x : yabai -m space --mirror x-axis
-shift + alt - y : yabai -m space --mirror y-axis
-
 # Float / Unfloat window
 shift + alt - space : \
     yabai -m window --toggle float; \
